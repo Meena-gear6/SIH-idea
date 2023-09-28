@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#1575d0)) fixed;
+        }
+        .bg{
+            background-color: white;
+            background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(#1575d0)) fixed;
+        }
+        .logo{
+          display: inline-block;
+          height: 5%;
+          width: 5%;
+          transform: translate(10px , 20px);
+          width: 50px;
+          border-radius: 50%;
+        }
+        .name{
+          display: inline-block;
+          font-size: 30px;
+          font-family: 'Century Gothic';
+          transform: translate(10px , 30px);
+        }
+        .location{
+            height: 3%;
+            width: 3%;
+            margin: 3px;
+            
+            transform: translate(1270px,10px);
+            display: inline-block;
+            border-radius: 50%;
+        }
+        .location1{
+            display: inline-block;
+            font-size: 150%;
+            font-family: 'Playfair Display' , 'Times New Roman', Times, serif;
+            transform: translate(980px,15px);
+        }
+        .choose{
+            display: inline-block;
+            padding: 50px 400px;
+            font-size: 50px;
+            font-family: 'Century Gothic' , 'Times New Roman', Times, serif;
+            text-shadow: 3px 3px rgb(170, 170, 170);
+            font-weight: bold;
+            transform: translate(100px,0px);
+        }
+        .card{
+            display: inline-block;
+            margin: 40px;
+            padding: 20px;
+            font-size: 20px;
+            right: -200px;
+            border-radius: 30px ;
+            box-shadow: 8px 8px rgb(128, 128, 128);
+            transition:   ease-in-out 0.2s;
+        }
+        .btn-primary {
+            border-radius: 30px;
+            padding: 5px 30px;
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        .new{
+          font-size: 30px;
+
+        }
+        .Doc51{
+          height: 200px;
+          width: 230px;
+        }
+        
+    </style>
+</head>
+<body>
+  <div class='bg'>
+    
+    
+    
+    <h1 class="choose">SELECT THE CATEGORY</h1>
+  </div>
+    
+    <br>
+    <div class="card" style="width: 18rem;">
+        <div class="new">PAEDIATRICIAN</div>
+        <div class="card-body">
+          <img class="Doc51" src="./paed.jpg" />
+          <a href="http://127.0.0.1:5500/SIH/m2.html" class="btn btn-primary">Go </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="new">NEUROLOGIST</div>
+       
+        <div class="card-body">
+          <img class="Doc51"  src="./neuro.jpg" />
+          <a href="http://127.0.0.1:5500/SIH/m3.html" class="btn btn-primary">Go </a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <div class="new">DERMATOLOGIST</div>
+        
+        <div class="card-body">
+          <img class="Doc51"  src="./derma.jpg" />
+          <a href="http://127.0.0.1:5500/SIH/m4.html" class="btn btn-primary">Go </a>
+        </div>
+      </div>
+</body>
+</html>

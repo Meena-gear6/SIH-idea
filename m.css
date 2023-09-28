@@ -1,0 +1,24 @@
+a:link {
+    color:white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: white;
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }
+  .group1{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+  }

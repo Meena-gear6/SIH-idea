@@ -1,0 +1,28 @@
+
+.card{
+    display: inline-block;
+    margin: 40px;
+    padding: 20px;
+    font-size: 20px;
+    right: -200px;
+    border-radius: 30px ;
+    box-shadow: 8px 8px rgb(128, 128, 128);
+    transition:   ease-in-out 0.2s;
+}
+.btn-primary {
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-title{
+    font-size: 30px;
+    transform: translate(50px , 0px);
+}
+.card-text{
+    transform: translate(40px , 0px);
+}
+.btn{
+    transform: translate(40px , 0px);
+}
