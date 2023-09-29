@@ -19,16 +19,16 @@ The actual integration may require specific libraries or SDKs provided by the RF
 You need to have the necessary permissions and drivers installed to access the RFID reader's serial port on your system.
 
 
-EXAMPLE
+# EXAMPLE
 
 
 
 import serial
 
-# Define the serial port where the RFID reader is connected
+Define the serial port where the RFID reader is connected
 serial_port = "/dev/ttyUSB0"  # Change this to your specific port
 
-# Initialize the serial connection to the RFID reader
+Initialize the serial connection to the RFID reader
 rfid_reader = serial.Serial(serial_port, baudrate=9600, timeout=1)
 
 def read_rfid_tag():
@@ -40,7 +40,7 @@ def read_rfid_tag():
         print("Error reading RFID:", str(e))
         return None
 
-# Main program loop
+Main program loop
 while True:
     # Read an RFID tag
     rfid_tag = read_rfid_tag()
@@ -54,7 +54,7 @@ while True:
         print("RFID Tag Read:", rfid_tag)
         # Your appointment scheduling code goes here
 
-# Close the RFID reader connection when done
+Close the RFID reader connection when done
 rfid_reader.close()
 
 
@@ -76,11 +76,11 @@ In this example given below, the Python program periodically fetches Wi-Fi data 
 
 This is a simplified example
 
-EXAMPLE
+# EXAMPLE
 
 import requests
 
-# Server URL where Wi-Fi data is stored
+Server URL where Wi-Fi data is stored
 server_url = "https://your-server-url.com/wifi-data-endpoint"
 
 def fetch_wifi_data():
@@ -96,7 +96,7 @@ def fetch_wifi_data():
         print("Error fetching Wi-Fi data:", str(e))
         return None
 
-# Main program logic
+Main program logic
 while True:
     # Fetch Wi-Fi data from the server
     wifi_data = fetch_wifi_data()
